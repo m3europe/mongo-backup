@@ -8,5 +8,5 @@ deployment:
       - master
     commands:
       - docker build -t registry.m3-dev.co.uk/mongo_bkp_svr . 
-      - docker tag mongo_bkp_svr registry.m3-dev.co.uk/mongo_bkp_svr:${CIRCLE_SHA1}
+      - docker tag registry.m3-dev.co.uk/mongo_bkp_svr registry.m3-dev.co.uk/mongo_bkp_svr:${CIRCLE_SHA1}
       - docker push registry.m3-dev.co.uk/mongo_bkp_svr
