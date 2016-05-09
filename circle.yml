@@ -7,6 +7,6 @@ deployment:
     branch:
       - master
     commands:
-      - docker build -t mongo_bkp_svr . 
+      - docker build -t registry.m3-dev.co.uk/mongo_bkp_svr . 
       - docker tag mongo_bkp_svr registry.m3-dev.co.uk/mongo_bkp_svr:${CIRCLE_SHA1}
       - docker push registry.m3-dev.co.uk/mongo_bkp_svr
